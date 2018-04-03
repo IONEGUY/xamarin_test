@@ -82,7 +82,7 @@ namespace Calculator
                     break;
                 case "=":
                     operation.secondOperand = Parse(expressionText);
-                    expressionText = operation.GetResult()?.ToString();
+                    expressionText = operation.GetResult()?.ToString() ?? expressionText;
                     operation.firstOperand = operation.result;
                     break;
                 default:

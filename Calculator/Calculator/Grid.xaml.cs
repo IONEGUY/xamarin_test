@@ -12,12 +12,10 @@ namespace Calculator
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Grid : ContentPage
 	{
-        Processor processor;
+        Processor processor = new Processor();
    		public Grid ()
 		{
 			InitializeComponent ();
-
-            processor = new Processor();
         }
 
         public void NumberHandler(object sender, ClickedEventArgs e)

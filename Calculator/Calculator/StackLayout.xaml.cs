@@ -12,26 +12,24 @@ namespace Calculator
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class StackLayout : ContentPage
 	{
-		public StackLayout ()
+        Processor processor = new Processor();
+
+        public StackLayout ()
 		{
 			InitializeComponent ();
 		}
 
         public void NumberHandler(object sender, ClickedEventArgs e)
         {
-            //Button button = (Button)sender;
-            //if (button.Text == "0" && button.Text.Length == 1)
-            //{
-            //    ExpressionText.Text += "0,";
-            //}
-            //else
-            //{
-            //    ExpressionText.Text += ((Button)sender).Text;
-            //}
+            Button button = (Button)sender;        
+            ExpressionText.Text += processor.CheckExpression(button.Text, ExpressionText.Text);
         }
+
         public void OperationHandler(object sender, ClickedEventArgs e)
         {
-
+            Button button = (Button)sender;
+            string operat = button.Text.Trim();
+            ExpressionText.Text = processor.GetResult(operat, ExpressionText.Text);
         }
     }
 }
