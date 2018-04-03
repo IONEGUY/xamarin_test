@@ -86,9 +86,16 @@ namespace Calculator
                     operation.firstOperand = operation.result;
                     break;
                 default:
-                    operation.firstOperand = Parse(expressionText);
-                    operation.operat = operat;
-                    expressionText = "";
+                    if(operat == "-" && operation.firstOperand == null)
+                    {
+                        expressionText += "-";
+                    }
+                    else
+                    {
+                        operation.firstOperand = Parse(expressionText);
+                        operation.operat = operat;
+                        expressionText = "";
+                    }
                     break;
             }
             return expressionText;

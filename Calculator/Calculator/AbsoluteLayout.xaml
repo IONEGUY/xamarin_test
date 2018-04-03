@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calculator.AbsoluteLayout"
-             Title="Absolute">
+             Title="Absolute"
+             BackgroundColor="DarkBlue">
     <ContentPage.Content>
         <AbsoluteLayout>
             <Frame HorizontalOptions="FillAndExpand"
@@ -16,39 +17,40 @@
             </Frame>
             <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .18, 1, .2" 
                             AbsoluteLayout.LayoutFlags="All">
-                <Button Clicked="OperationHandler" Text="C" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="OperationHandler" Text="/" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="OperationHandler" Text="X" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="OperationHandler" Text="Back" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="OperationHandler" Text="C" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="OperationHandler" Text="/" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="OperationHandler" Text="X" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="OperationHandler" Text="Back" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
             </AbsoluteLayout>
             <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .3, 1, .2" 
                             AbsoluteLayout.LayoutFlags="All">
-                <Button Clicked="NumberHandler" Text="7" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="NumberHandler" Text="8" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="NumberHandler" Text="9" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button  Clicked="OperationHandler" Text="-" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="NumberHandler" Text="7" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="NumberHandler" Text="8" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="NumberHandler" Text="9" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large"  Clicked="OperationHandler" Text="-" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
             </AbsoluteLayout>
             <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .42, 1, .2" 
                             AbsoluteLayout.LayoutFlags="All">
-                <Button Clicked="NumberHandler" Text="4" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="NumberHandler" Text="5" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="NumberHandler" Text="6" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="OperationHandler" Text="+" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="NumberHandler" Text="4" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="NumberHandler" Text="5" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="NumberHandler" Text="6" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button FontSize="Large" Clicked="OperationHandler" Text="+" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
             </AbsoluteLayout>
             <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .72, 1, .4" 
                             AbsoluteLayout.LayoutFlags="All" >
                 <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, 0, 1, .5" 
                                 AbsoluteLayout.LayoutFlags="All" >
-                    <Button Clicked="NumberHandler" Text="1" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                    <Button Clicked="NumberHandler" Text="2" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                    <Button Clicked="NumberHandler" Text="3" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Button FontSize="Large" Clicked="NumberHandler" Text="1" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Button FontSize="Large" Clicked="NumberHandler" Text="2" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Button FontSize="Large" Clicked="NumberHandler" Text="3" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
                 </AbsoluteLayout>
                 <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .5, 1, .5" 
                                 AbsoluteLayout.LayoutFlags="All" >
-                    <Button Clicked="NumberHandler" Text="0" AbsoluteLayout.LayoutBounds="0, 0, .49, .47" AbsoluteLayout.LayoutFlags="All"/>
-                    <Button Clicked="NumberHandler" HorizontalOptions="FillAndExpand" Text="." AbsoluteLayout.LayoutBounds=".66, 0, Autosize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Button FontSize="Large" Clicked="NumberHandler" Text="0" AbsoluteLayout.LayoutBounds="0, 0, .49, .47" AbsoluteLayout.LayoutFlags="All"/>
+                    <Button FontSize="Large" Clicked="NumberHandler" HorizontalOptions="FillAndExpand" Text="." AbsoluteLayout.LayoutBounds=".66, 0, Autosize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
                 </AbsoluteLayout>
-                <Button AbsoluteLayout.LayoutBounds=".99, 0, .24, .49" 
+                <Button FontSize="Large"
+                        AbsoluteLayout.LayoutBounds=".99, 0, .24, .49" 
                         AbsoluteLayout.LayoutFlags="All"
                         Text="="
                         Clicked="OperationHandler"></Button>
