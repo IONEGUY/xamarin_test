@@ -7,6 +7,6 @@
     <TabbedPage.Children>
         <local:AbsoluteLayout />
         <local:StackLayout />
-        <local:GridLayout />
+        <local:Grid />
     </TabbedPage.Children>
 </TabbedPage>

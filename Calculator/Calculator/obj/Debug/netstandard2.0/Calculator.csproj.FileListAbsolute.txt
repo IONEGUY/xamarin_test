@@ -19,11 +19,10 @@ D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.csprojRe
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.csproj.CoreCompileInputs.cache
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.AbsoluteLayout.xaml.g.cs
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.App.xaml.g.cs
-D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Grid.xaml.g.cs
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.MainPage.xaml.g.cs
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.StackLayout.xaml.g.cs
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.AssemblyInfoInputs.cache
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.AssemblyInfo.cs
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.dll
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.pdb
-D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.GridLayout.xaml.g.cs
+D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Grid.xaml.g.cs

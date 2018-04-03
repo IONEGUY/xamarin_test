@@ -11,8 +11,7 @@
 namespace Calculator {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\i.zavadsky\\source\\repos\\Calculator\\Calculator\\Calculator\\AbsoluteLayout." +
-        "xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Calculator\\Calculator\\Calculator\\AbsoluteLayout.xaml")]
     public partial class AbsoluteLayout : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

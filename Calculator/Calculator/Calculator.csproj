@@ -21,7 +21,7 @@
     <EmbeddedResource Update="AbsoluteLayout.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="GridLayout.xaml">
+    <EmbeddedResource Update="Grid.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="RelativeLayoutPage.xaml">

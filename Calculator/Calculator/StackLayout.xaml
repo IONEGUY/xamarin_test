@@ -19,36 +19,36 @@
                 <Label x:Name="ExpressionText" Text="" FontSize="Large" />
             </Frame>
             <StackLayout  Orientation="Horizontal" Margin="-6,0,0,0">
-                <Button Style="{StaticResource buttonStyle}" Text="C"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="/">/</Button>
-                <Button Style="{StaticResource buttonStyle}" Text="X"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="Back"></Button>
+                <Button Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="C"></Button>
+                <Button Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="/">/</Button>
+                <Button Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="X"></Button>
+                <Button Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="Back"></Button>
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="-6,0,0,0">
-                <Button Style="{StaticResource buttonStyle}" Text="7"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="8"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="9"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="-"></Button>
+                <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="7"></Button>
+                <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="8"></Button>
+                <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="9"></Button>
+                <Button Clicked="NumberHandler" Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="-"></Button>
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="-6,0,0,0">
-                <Button Style="{StaticResource buttonStyle}" Text="4"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="5"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="6"></Button>
-                <Button Style="{StaticResource buttonStyle}" Text="+"></Button>
+                <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="4"></Button>
+                <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="5"></Button>
+                <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="6"></Button>
+                <Button Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="+"></Button>
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="-6,0,0,0">
                 <StackLayout Orientation="Vertical">
                     <StackLayout Orientation="Horizontal">
-                        <Button Style="{StaticResource buttonStyle}" Text="1"></Button>
-                        <Button Style="{StaticResource buttonStyle}" Text="2"></Button>
-                        <Button Style="{StaticResource buttonStyle}" Text="3"></Button>
+                        <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="1"></Button>
+                        <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="2"></Button>
+                        <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="3"></Button>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Button Style="{StaticResource buttonStyle}" Text="0"></Button>
-                        <Button Style="{StaticResource buttonStyle}" Text="," HorizontalOptions="FillAndExpand" />
+                        <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="0"></Button>
+                        <Button Clicked="NumberHandler" Style="{StaticResource buttonStyle}" Text="," HorizontalOptions="FillAndExpand" />
                     </StackLayout>
                 </StackLayout>
-                <Button Style="{StaticResource buttonStyle}" Text="="></Button>
+                <Button Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="="></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
