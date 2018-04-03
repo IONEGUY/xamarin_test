@@ -4,7 +4,7 @@
              x:Class="Calculator.AbsoluteLayout"
              Title="Absolute">
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <!--<AbsoluteLayout>
             <Frame HorizontalOptions="FillAndExpand"
                    OutlineColor="Accent" 
                    AbsoluteLayout.LayoutBounds=".0, .0, 1, .13"
@@ -53,6 +53,6 @@
                         Text="="
                         Clicked="OperationHandler"></Button>
             </AbsoluteLayout>
-        </AbsoluteLayout>
+        </AbsoluteLayout>-->
     </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,7 @@
             <Frame OutlineColor="Accent">
                 <Label x:Name="ExpressionText" Text="" FontSize="Large" />
             </Frame>
-            <Grid>
+            <Grid VerticalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -30,12 +30,12 @@
                 <Button Clicked="NumberHandler" Text="7" Grid.Column="0" Grid.Row="1" />
                 <Button Clicked="NumberHandler" Text="8" Grid.Column="1" Grid.Row="1" />
                 <Button Clicked="NumberHandler" Text="9" Grid.Column="2" Grid.Row="1" />
-                <Button Clicked="NumberHandler" Text="-" Grid.Column="3" Grid.Row="1" />
+                <Button Clicked="OperationHandler" Text="-" Grid.Column="3" Grid.Row="1" />
 
                 <Button Clicked="NumberHandler" Text="4" Grid.Column="0" Grid.Row="2" />
                 <Button Clicked="NumberHandler" Text="5" Grid.Column="1" Grid.Row="2" />
                 <Button Clicked="NumberHandler" Text="6" Grid.Column="2" Grid.Row="2" />
-                <Button Clicked="NumberHandler" Text="+" Grid.Column="3" Grid.Row="2" />
+                <Button Clicked="OperationHandler" Text="+" Grid.Column="3" Grid.Row="2" />
 
                 <Button Clicked="NumberHandler" Text="1" Grid.Column="0" Grid.Row="3" />
                 <Button Clicked="NumberHandler" Text="2" Grid.Column="1" Grid.Row="3" />
@@ -45,7 +45,7 @@
 
                 <Button Clicked="NumberHandler" Text="0" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" />
 
-                <Button Clicked="NumberHandler" Text="," Grid.Column="2" Grid.Row="4" />
+                <Button Clicked="NumberHandler" Text="." Grid.Column="2" Grid.Row="4" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>

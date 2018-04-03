@@ -16,5 +16,22 @@ namespace Calculator
 		{
 			InitializeComponent ();
 		}
-	}
+
+        public void NumberHandler(object sender, ClickedEventArgs e)
+        {
+            //Button button = (Button)sender;
+            //if (button.Text == "0" && button.Text.Length == 1)
+            //{
+            //    ExpressionText.Text += "0,";
+            //}
+            //else
+            //{
+            //    ExpressionText.Text += ((Button)sender).Text;
+            //}
+        }
+        public void OperationHandler(object sender, ClickedEventArgs e)
+        {
+
+        }
+    }
 }

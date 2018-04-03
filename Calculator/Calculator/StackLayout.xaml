@@ -14,7 +14,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Yellow" Orientation="Vertical">
+        <!--<StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Yellow" Orientation="Vertical">
             <Frame OutlineColor="Accent">
                 <Label x:Name="ExpressionText" Text="" FontSize="Large" />
             </Frame>
@@ -50,6 +50,6 @@
                 </StackLayout>
                 <Button Clicked="OperationHandler" Style="{StaticResource buttonStyle}" Text="="></Button>
             </StackLayout>
-        </StackLayout>
+        </StackLayout>-->
     </ContentPage.Content>
 </ContentPage>
