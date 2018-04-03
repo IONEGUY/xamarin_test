@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.AbsoluteLayout"
+             Title="Absolute">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Frame HorizontalOptions="FillAndExpand"
+                   OutlineColor="Accent" 
+                   AbsoluteLayout.LayoutBounds=".0, .0, 1, .13"
+                   AbsoluteLayout.LayoutFlags="All">
+                <Label AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize"
+                       AbsoluteLayout.LayoutFlags="PositionProportional" 
+                       x:Name="ExpressionText" Text="dymdtymdtum" 
+                       FontSize="Large" />
+            </Frame>
+            <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .18, 1, .2" 
+                            AbsoluteLayout.LayoutFlags="All">
+                <Button Text="C" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="/" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="X" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="Back" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            </AbsoluteLayout>
+            <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .3, 1, .2" 
+                            AbsoluteLayout.LayoutFlags="All">
+                <Button Text="7" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="8" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="9" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="-" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            </AbsoluteLayout>
+            <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .42, 1, .2" 
+                            AbsoluteLayout.LayoutFlags="All">
+                <Button Text="4" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="5" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="6" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Button Text="+" AbsoluteLayout.LayoutBounds=".99, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            </AbsoluteLayout>
+            <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .72, 1, .4" 
+                            AbsoluteLayout.LayoutFlags="All" >
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, 0, 1, .5" 
+                                AbsoluteLayout.LayoutFlags="All" >
+                    <Button Text="1" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Button Text="2" AbsoluteLayout.LayoutBounds=".33, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Button Text="3" AbsoluteLayout.LayoutBounds=".66, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0, .5, 1, .5" 
+                                AbsoluteLayout.LayoutFlags="All" >
+                    <Button Text="0" AbsoluteLayout.LayoutBounds="0, 0, .49, .47" AbsoluteLayout.LayoutFlags="All"/>
+                    <Button HorizontalOptions="FillAndExpand" Text="," AbsoluteLayout.LayoutBounds=".66, 0, Autosize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                </AbsoluteLayout>
+                <Button AbsoluteLayout.LayoutBounds=".99, 0, .24, .49" 
+                        AbsoluteLayout.LayoutFlags="All"
+                        Text="="></Button>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
