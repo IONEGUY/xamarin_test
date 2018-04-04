@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Calculator
+namespace Calculator.Pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AbsoluteLayout : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Grid : ContentPage
 	{
         Processor processor = new Processor();
-
-        public AbsoluteLayout ()
+   		public Grid ()
 		{
 			InitializeComponent ();
-		}
+        }
 
         public void NumberHandler(object sender, ClickedEventArgs e)
         {

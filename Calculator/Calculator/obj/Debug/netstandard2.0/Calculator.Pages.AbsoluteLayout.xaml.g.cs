@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Calculator {
+namespace Calculator.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Calculator\\Calculator\\Calculator\\AbsoluteLayout.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Calculator\\Calculator\\Calculator\\Pages\\AbsoluteLayout.xaml")]
     public partial class AbsoluteLayout : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

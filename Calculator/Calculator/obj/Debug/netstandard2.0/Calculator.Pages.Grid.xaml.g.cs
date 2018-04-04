@@ -8,18 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Calculator {
+namespace Calculator.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Calculator\\Calculator\\Calculator\\StackLayout.xaml")]
-    public partial class StackLayout : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Calculator\\Calculator\\Calculator\\Pages\\Grid.xaml")]
+    public partial class Grid : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label ExpressionText;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(StackLayout));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Grid));
             ExpressionText = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "ExpressionText");
         }
     }
