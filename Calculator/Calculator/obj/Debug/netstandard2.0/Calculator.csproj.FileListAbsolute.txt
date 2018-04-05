@@ -25,3 +25,17 @@ D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.Ab
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.Grid.xaml.g.cs
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.MainPage.xaml.g.cs
 D:\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.StackLayout.xaml.g.cs
+D:\Projects\Calculator\Calculator\Calculator\bin\Debug\netstandard2.0\Calculator.deps.json
+D:\Projects\Calculator\Calculator\Calculator\bin\Debug\netstandard2.0\Calculator.dll
+D:\Projects\Calculator\Calculator\Calculator\bin\Debug\netstandard2.0\Calculator.pdb
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.csprojResolveAssemblyReference.cache
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.csproj.CoreCompileInputs.cache
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.App.xaml.g.cs
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.AbsoluteLayoutPage.xaml.g.cs
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.GridPage.xaml.g.cs
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.MainPage.xaml.g.cs
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.Pages.StackLayoutPage.xaml.g.cs
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.AssemblyInfoInputs.cache
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.AssemblyInfo.cs
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.dll
+D:\Projects\Calculator\Calculator\Calculator\obj\Debug\netstandard2.0\Calculator.pdb

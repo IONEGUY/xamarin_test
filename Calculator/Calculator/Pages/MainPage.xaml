@@ -6,8 +6,8 @@
              x:Class="Calculator.Pages.MainPage">
 
     <TabbedPage.Children>
-        <pages:AbsoluteLayout />
-        <pages:StackLayout />
-        <pages:Grid />
+        <pages:AbsoluteLayoutPage />
+        <pages:StackLayoutPage />
+        <pages:GridPage />
     </TabbedPage.Children>
 </TabbedPage>

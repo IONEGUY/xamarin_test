@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resources="clr-namespace:Calculator.Resources;assembly=Calculator"
+             x:Class="Calculator.Pages.StackLayoutPage"
+             Title="Stack"
+             BackgroundColor="DarkGray">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" 
+                        Value="#ffffff" />
+                <Setter Property="BackgroundColor"
+                        Value="#0000ff" />
+                <Setter Property="FontSize" 
+                        Value="Large" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     BackgroundColor="Yellow"
+                     Orientation="Vertical">
+            <Frame OutlineColor="Accent">
+                <Label x:Name="ExpressionText"
+                       FontSize="Large" />
+            </Frame>
+            <StackLayout Orientation="Horizontal"
+                         Margin="-6,0,0,0">
+                <Button Clicked="OperationHandler"
+                        Text="{x:Static resources:Constants.Cancel}" />
+                <Button Clicked="OperationHandler"
+                        Text="{x:Static resources:Constants.Division}" />
+                <Button Clicked="OperationHandler"
+                        Text="{x:Static resources:Constants.Multiplication}" />
+                <Button Clicked="OperationHandler"
+                        Text="{x:Static resources:Constants.BackSpase}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Margin="-6,0,0,0">
+                <Button Clicked="NumberHandler" 
+                        Text="7"/>
+                <Button Clicked="NumberHandler"
+                        Text="8"/>
+                <Button Clicked="NumberHandler" 
+                        Text="9"/>
+                <Button Clicked="OperationHandler"
+                        Text="{x:Static resources:Constants.Minus}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Margin="-6,0,0,0">
+                <Button Clicked="NumberHandler"
+                        Text="4"/>
+                <Button Clicked="NumberHandler"
+                        Text="5"/>
+                <Button Clicked="NumberHandler" 
+                        Text="6"/>
+                <Button Clicked="OperationHandler" 
+                        Text="{x:Static resources:Constants.Plus}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Margin="-6,0,0,0">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal">
+                        <Button Clicked="NumberHandler"
+                                Text="1"/>
+                        <Button Clicked="NumberHandler"
+                                Text="2"/>
+                        <Button Clicked="NumberHandler"
+                                Text="3"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Clicked="NumberHandler"
+                                Text="0"/>
+                        <Button Clicked="NumberHandler"
+                                Text="{x:Static resources:Constants.Dot}"
+                                HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </StackLayout>
+                <Button Clicked="OperationHandler"
+                        Text="{x:Static resources:Constants.Equal}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

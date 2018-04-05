@@ -712,11 +712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Calculator\\Calculator\\Calculator.Android\\Calculator.Android.csproj",
+      "projectUniqueName": "D:\\Projects\\Calculator\\Calculator\\Calculator.Android\\Calculator.Android.csproj",
       "projectName": "Calculator.Android",
-      "projectPath": "D:\\Calculator\\Calculator\\Calculator.Android\\Calculator.Android.csproj",
+      "projectPath": "D:\\Projects\\Calculator\\Calculator\\Calculator.Android\\Calculator.Android.csproj",
       "packagesPath": "C:\\Users\\i.zavadsky\\.nuget\\packages\\",
-      "outputPath": "D:\\Calculator\\Calculator\\Calculator.Android\\obj\\",
+      "outputPath": "D:\\Projects\\Calculator\\Calculator\\Calculator.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -733,8 +733,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "D:\\Calculator\\Calculator\\Calculator\\Calculator.csproj": {
-              "projectPath": "D:\\Calculator\\Calculator\\Calculator\\Calculator.csproj"
+            "D:\\Projects\\Calculator\\Calculator\\Calculator\\Calculator.csproj": {
+              "projectPath": "D:\\Projects\\Calculator\\Calculator\\Calculator\\Calculator.csproj"
             }
           }
         }

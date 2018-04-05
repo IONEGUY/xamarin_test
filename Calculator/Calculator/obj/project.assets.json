@@ -387,11 +387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "D:\\Projects\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "D:\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
+      "projectPath": "D:\\Projects\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\i.zavadsky\\.nuget\\packages\\",
-      "outputPath": "D:\\Calculator\\Calculator\\Calculator\\obj\\",
+      "outputPath": "D:\\Projects\\Calculator\\Calculator\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

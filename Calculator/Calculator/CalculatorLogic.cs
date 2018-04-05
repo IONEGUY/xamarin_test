@@ -1,58 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Calculator.Resources;
 
 namespace Calculator
 {
-    class Operation
-    {
-        public double? result;
-        public double? firstOperand;
-        public double? secondOperand;
-        public string operat;
-
-        public double? GetResult()
-        {
-            switch (operat)
-            {
-                case "+": result = firstOperand + secondOperand; break;
-                case "-": result = firstOperand - secondOperand; break;
-                case "/": result = firstOperand / secondOperand; break;
-                case "X": result = firstOperand * secondOperand; break;
-            }
-            return result;
-        }
-
-        public void Clear()
-        {
-            result = null;
-            firstOperand = null;
-            secondOperand = null;
-            operat = null;
-        }
-    }
-
     public class Processor
     {
-        Operation operation;
+        private readonly Operation _operation;
 
         public Processor()
         {
-            operation = new Operation();
+            _operation = new Operation();
         }
 
         public string CheckExpression(string buttonText, string expression)
         {
-            if (buttonText == "." && (expression.Contains(".") || expression.Length == 0))
+            if (buttonText == Constants.Dot && (expression.Contains(Constants.Dot) || expression.Length == 0))
             {
-                return "";
+                return string.Empty;
             }
             return buttonText;
         }
 
-        private double? Parse(string num)
+        private static double? Parse(string num)
         {
-            bool boolResult = double.TryParse(num, out double result);
+            var boolResult = double.TryParse(num, out var result);
             if (boolResult == false)
             {
                 return null;
@@ -60,45 +33,92 @@ namespace Calculator
             return result;
         }
 
-        private string GetBackSpaceNum(string expressionText)
+        private static string GetBackSpaceNum(string expressionText)
         {
-            if (expressionText != "")
+            return expressionText != string.Empty ? expressionText.Substring(0, expressionText.Length - 1) : string.Empty;
+        }
+
+        private string CancelCommand()
+        {
+            _operation.Clear();
+            return string.Empty;
+        }
+
+        private void EqualCommand(ref string expressionText)
+        {
+            _operation.SecondOperand = Parse(expressionText);
+            expressionText = _operation.GetResult()?.ToString() ?? expressionText;
+            _operation.FirstOperand = _operation.Result;
+        }
+
+        private string DefaultCommand(string operat, string expressionText)
+        {
+            if (operat == Constants.Minus && _operation.FirstOperand == null)
             {
-                return expressionText.Substring(0, expressionText.Length - 1);
+                expressionText += Constants.Minus;
+                return expressionText;
             }
-            return "";
+            _operation.FirstOperand = Parse(expressionText);
+            _operation.Operat = operat;
+            expressionText = string.Empty;
+            return expressionText;
         }
 
         public string GetResult(string operat, string expressionText)
         {
             switch (operat)
             {
-                case "C":
-                    expressionText = "";
-                    operation.Clear();
+                case Constants.Cancel:
+                    expressionText = CancelCommand();
                     break;
-                case "Back":
+                case Constants.BackSpase:
                     expressionText = GetBackSpaceNum(expressionText);
                     break;
-                case "=":
-                    operation.secondOperand = Parse(expressionText);
-                    expressionText = operation.GetResult()?.ToString() ?? expressionText;
-                    operation.firstOperand = operation.result;
+                case Constants.Equal:
+                    EqualCommand(ref expressionText);
                     break;
                 default:
-                    if(operat == "-" && operation.firstOperand == null)
-                    {
-                        expressionText += "-";
-                    }
-                    else
-                    {
-                        operation.firstOperand = Parse(expressionText);
-                        operation.operat = operat;
-                        expressionText = "";
-                    }
+                    expressionText = DefaultCommand(operat, expressionText);
                     break;
             }
             return expressionText;
+        }
+
+        private class Operation
+        {
+            public double? Result;
+            public double? FirstOperand;
+            public double? SecondOperand;
+            public string Operat;
+
+            public double? GetResult()
+            {
+                switch (Operat)
+                {
+                    case Constants.Plus:
+                        Result = FirstOperand + SecondOperand;
+                        break;
+                    case Constants.Minus:
+                        Result = FirstOperand - SecondOperand;
+                        break;
+                    case Constants.Division:
+                        Result = FirstOperand / SecondOperand;
+                        break;
+                    case Constants.Multiplication:
+                        Result = FirstOperand * SecondOperand;
+                        break;
+                }
+
+                return Result;
+            }
+
+            public void Clear()
+            {
+                Result = null;
+                FirstOperand = null;
+                SecondOperand = null;
+                Operat = null;
+            }
         }
     }
 }
